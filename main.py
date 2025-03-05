@@ -17,7 +17,7 @@ def clean_thread_url(thread_url):
 
 
 def run_scripts(thread_url):
-    """Runs scraper.py and stats_analyzer.py in sequence for a given thread, showing live output including ETA progress."""
+    """Runs scraper.py and stats.py in sequence for a given thread, showing live output including ETA progress."""
 
     def run_process(command):
         """Runs a subprocess and ensures its output is displayed live, including real-time updates."""

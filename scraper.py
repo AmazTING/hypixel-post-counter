@@ -84,7 +84,7 @@ def scrape_thread(thread_url):
 
         for post in page_soup.findAll("article", {"class": "message message--post js-post js-inlineModContainer"}):
             author = post["data-author"]
-            timestamp = post.find("time", {"class": "u-dt"})["data-time"]
+            timestamp = post.find("time", {"class": "u-dt"})["data-timestamp"]
 
             bbwrapper = post.find("div", {"class": "bbWrapper"})
 
